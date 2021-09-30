@@ -9,7 +9,7 @@ Download Node.js which can be found here: https://nodejs.org/en/download/
 ### React-Router-Dom
 So we are building a React app with multiple routes and it requires a package react-router-dom. Install it with NPM.
 
-'npm i react-router-dom'
+`npm i react-router-dom`
 
 ### VS Code
 Download VS Code as IDE: https://code.visualstudio.com
@@ -18,7 +18,7 @@ Download VS Code as IDE: https://code.visualstudio.com
 
 After successfully cloning the code. Open folder in VSCode. Next open a terminal in VS Code. Save your files. 
 
-### 'npm run build'
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
