@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
-            React Multi-Page Website
+            The Afterschool Program
           </Link>
           <div>
             <ul class="navbar-nav ml-auto">
