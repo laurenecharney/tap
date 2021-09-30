@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# TAP (The Afterschool Program) Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+
+## Getting Started
+### Node.js
+Download Node.js which can be found here: https://nodejs.org/en/download/
+
+### React-Router-Dom
+So we are building a React app with multiple routes and it requires a package react-router-dom. Install it with NPM.
+
+npm i react-router-dom
+
+### VS Code
+Download VS Code as IDE: https://code.visualstudio.com
 
 ## Available Scripts
 
