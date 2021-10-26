@@ -1,4 +1,5 @@
 import React from "react";
+import taplogo from './taplogo.png';
 
 function Home() {
   return (
@@ -8,16 +9,17 @@ function Home() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="logo512.png"
+              src={taplogo}
               alt="TAP Logo"
             />
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">The Afterschool Program</h1>
             <p>
-              The Afterschool Program, or TAP for short, is a non-profit program where 
-              college student volunteers help Nashville students with schoolwork and other enrichment.
-              The TAP mission is to break the poverty cycle and close the achievement gap in children.
+              The Afterschool Program, or TAP for short, is a non-profit program whose mission 
+              is to break the poverty cycle and close the achievement gap in children. Since 2011,
+              TAP has paired college student volunteers with Nashville students 
+              to focus on literacy development and social enrichment.
             </p>
           </div>
         </div>
