@@ -70,12 +70,17 @@ function About() {
             <p>
               Matthew McKenna, Mark Wilkins, Victoria King
             </p>
-            <h3 class="font-weight-light">Communication</h3>
+            <h3 class="font-weight-light">Communications Team</h3>
             <p>
               Madi Sims, Jennifer Fish
             </p>
           </div>
         </div>
+
+        <div style={{padding:50}}>
+              <p>.</p>
+        </div>
+
       </div>
     </div>
   );
