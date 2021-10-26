@@ -19,7 +19,8 @@ function Home() {
               The Afterschool Program, or TAP for short, is a non-profit program whose mission 
               is to break the poverty cycle and close the achievement gap in children. Since 2011,
               TAP has paired college student volunteers with Nashville students 
-              to focus on literacy development and social enrichment.
+              to focus on literacy development and social enrichment, allowing children to tap
+              into their success!
             </p>
           </div>
         </div>
