@@ -1,8 +1,8 @@
 import React from "react";
 
-function Resources() {
+function Mentors() {
   return (
-    <div className="resources">
+    <div className="mentors">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
@@ -13,7 +13,7 @@ function Resources() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Resources</h1>
+            <h1 class="font-weight-light">Mentors</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -27,4 +27,4 @@ function Resources() {
   );
 }
 
-export default Resources;
+export default Mentors;
