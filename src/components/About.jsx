@@ -1,5 +1,5 @@
 import React from "react";
-import taplogo from './taplogo.png';
+import taplogowide from './taplogo-wide.png';
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src={taplogo}
+              src={taplogowide}
               alt="TAP Logo"
             />
           </div>
