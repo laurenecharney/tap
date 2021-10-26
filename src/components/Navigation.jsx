@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
 
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <Link class="navbar-brand" to="/">
             The Afterschool Program
@@ -26,8 +27,27 @@ function Navigation(props) {
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
+
                 <Link class="nav-link" to="/about">
                   About
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/mentors" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/mentors">
+                  Mentors
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/mentees" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/mentees">
+                  Mentees
                 </Link>
               </li>
               <li
