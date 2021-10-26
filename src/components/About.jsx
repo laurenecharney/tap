@@ -8,8 +8,8 @@ function About() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
+              src="logo192.png"
+              alt="TAP Logo"
             />
           </div>
           <div class="col-lg-5">

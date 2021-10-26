@@ -8,17 +8,16 @@ function Home() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
+              src="logo512.png"
+              alt="TAP Logo"
             />
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">The Afterschool Program</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              The Afterschool Program, or TAP for short, is a non-profit program where 
+              college student volunteers help Nashville students with schoolwork and other enrichment.
+              The TAP mission is to break the poverty cycle and close the achievement gap in children.
             </p>
           </div>
         </div>
