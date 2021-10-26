@@ -15,10 +15,16 @@ function Contact() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">Contact</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Email: <a href="mailto:tapintoyoursuccess@gmail.com">tapintoyoursuccess@gmail.com</a>
+            </p>
+            <p>
+              Instagram: <a href="https://www.instagram.com/tapnashville/">@tapnashville</a>
+            </p>
+            <p>
+              Facebook: <a href="https://www.facebook.com/vanderbiltTAP/">The Afterschool Program</a>
+            </p>
+            <p>
+            Faculty Advisor: Ms. Tam 
             </p>
           </div>
         </div>
