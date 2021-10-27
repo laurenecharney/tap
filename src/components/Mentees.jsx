@@ -1,25 +1,27 @@
 import React from "react";
+import mentees from './Mentees.jpeg';
 
 function Mentees() {
   return (
     <div className="mentees">
       <div class="container" style={{ maxWidth: "100%" }}>
-        <div class="row align-items-center" style={{ paddingTop: 35, paddingBottom: 35, backgroundColor: "#f2f2f2" }}>
+        <div class="row align-items-center" style={{ paddingTop: 35, paddingBottom: 35, backgroundColor: "#519dd9" }}>
           <div class="col-lg-6 offset-1">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/550x300"
+              height="300"
+              src={mentees}
               alt=""
             />
           </div>
           <div class="col-lg-4">
-            <h1 class="font-weight-light">Our Mentees</h1>
-            <p>
+            <h1 class="font-weight-bold" style={{color: "white"}}>Our Mentees</h1>
+            <h5 style={{color: "white"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
-            </p>
+            </h5>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ function Mentors() {
   return (
     <div className="mentors">
       <div class="container" style={{ maxWidth: "100%" }}>
-        <div class="row align-items-center" style={{ paddingTop: 35, paddingBottom: 35, backgroundColor: "#f2f2f2" }}>
+        <div class="row align-items-center" style={{ paddingTop: 35, paddingBottom: 35, backgroundColor: "#db0038" }}>
           <div class="col-lg-4 offset-2" style={{ display: 'flex' }}>
             <img
               class="img-fluid rounded mb-4 mb-md-0"
@@ -19,14 +19,14 @@ function Mentors() {
             />
           </div>
           <div class="col-lg-4">
-            <h1 class="font-weight-bold">Our Mentors</h1>
-            <p>
+            <h1 class="font-weight-bold" style={{color: "white"}}>Our Mentors</h1>
+            <h5 style={{color: "white"}}>
               Our mentors are Vanderbilt students from all different backgrounds.
               The unqiue set of menotrs brings a diversity of thought and
               educational strengths to our program. Each mentor is pair with a
               student, and the mentor meets with their student at least once a
               week.
-            </p>
+            </h5>
           </div>
         </div>
 
