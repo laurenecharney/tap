@@ -19,7 +19,7 @@ function Mentors() {
             />
           </div>
           <div class="col-lg-4">
-            <h1 class="font-weight-light">Our Mentors</h1>
+            <h1 class="font-weight-bold">Our Mentors</h1>
             <p>
               Our mentors are Vanderbilt students from all different backgrounds.
               The unqiue set of menotrs brings a diversity of thought and
@@ -34,7 +34,7 @@ function Mentors() {
         <div class="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
           <div class="col-lg-8 offset-2">
             <div style={{ textAlign: "center", paddingBottom: 25 }}>
-              <h1 class="font-weight-light">Upcoming Events </h1>
+              <h1 class="font-weight-bold">Upcoming Events </h1>
             </div>
 
             <iframe src="https://calendar.google.com/calendar/embed?src=c_bvg2cm616d6d56g935297rb1fc%40group.calendar.google.com&ctz=America%2FChicago"
@@ -46,7 +46,7 @@ function Mentors() {
         </div>
 
         {/* VIRTUAL ZOOM LINKS */}
-        <div class="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20 }}>
+        <div class="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20, backgroundColor: "#f2f2f2" }}>
           <div class="col-lg-4 offset-2" style={{ textAlign: "center" }}>
             <h1 class="font-weight-bold">Join Your Vitual Zoom Session</h1>
           </div>
