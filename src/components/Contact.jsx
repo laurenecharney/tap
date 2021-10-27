@@ -14,7 +14,7 @@ function Contact() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-bold" style={{color: "white"}}>Contact Us</h1>
+            <h1 class="font-weight-light" style={{color: "white"}}>Contact Us</h1>
             <h5 style={{paddingTop: 10, paddingBottom: 10, color: "white"}}>
               <b>Email:</b> <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "white"}}>tapintoyoursuccess@gmail.com</a>
             </h5>

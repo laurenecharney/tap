@@ -15,7 +15,7 @@ function Mentees() {
             />
           </div>
           <div class="col-lg-4">
-            <h1 class="font-weight-bold" style={{color: "white"}}>Our Mentees</h1>
+            <h1 class="font-weight-light" style={{color: "white"}}>Our Mentees</h1>
             <h5 style={{color: "white"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
