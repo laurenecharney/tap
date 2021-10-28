@@ -1,15 +1,54 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import taplogo from './taplogo.png';
 
+const query = `
+{
+  tapMainCollection{
+    items{
+      homepageImage{
+        url
+      }
+      homepageIntoText
+    }
+  }
+}
+`;
+
 function Home() {
+  const [page, setPage] = useState(null);
+
+  useEffect(() => {
+    window
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/v2hmb9eckh3e/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer gAy1xtMkzYZQ1kvD6d2IuiD4UFhItH0M4MgDeDqs4Bo",
+        },
+        body: JSON.stringify({ query }),
+      })
+      .then((response) => response.json())
+      .then(({ data, errors }) => {
+        if (errors) {
+          console.error(errors);
+        }
+
+        setPage(data.tapMainCollection.items[0]);
+      });
+  }, []);
+
+  if (!page) {
+    return "Loading...";
+  }
+
   return (
     <div className="home">
       <div class="container" style={{ maxWidth: "100%" }}>
         <div class="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40}}>
           <div class="col-lg-4 offset-2">
             <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src={taplogo}
+              class= "img-fluid rounded mb-4 mb-lg-0"
+              src={page.homepageImage.url}
               alt="TAP Logo"
             />
           </div>
@@ -30,6 +69,7 @@ function Home() {
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src={taplogo}
+              width = "400"
               alt="TAP Logo"
             />
           </div>
