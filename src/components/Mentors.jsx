@@ -42,13 +42,20 @@ function Mentors() {
             {/* <div style={{display: 'flex'}}>
           <Calendar />
         </div> */}
+            <p style={{textAlign: "center"}}>
+              TAP usually meets from 4-5pm on Mondays, Tuesdays, and Wednesdays.
+              <br></br>
+              If the calendar does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+              <br></br>
+              Sorry for the inconvenience!
+            </p>
           </div>
         </div>
 
         {/* VIRTUAL ZOOM LINKS */}
         <div class="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20, backgroundColor: "#f2f2f2" }}>
           <div class="col-lg-4 offset-2" style={{ textAlign: "center" }}>
-            <h1 class="font-weight-bold">Join Your Vitual Zoom Session</h1>
+            <h1 class="font-weight-bold">Join Your Virtual Zoom Session</h1>
           </div>
 
           <div class="col-lg-4" style={{ display: 'flex' }}>
@@ -234,6 +241,11 @@ function Mentors() {
           <div class="col-lg-8 offset-2" style={{ alignItems: "center" }}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCTdF2fx78Nkrw-RYDBeetnMNUMhT1KptRi6V3Y9uBYy3VVA/viewform?embedded=true"
               width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <p style={{textAlign: "center"}}>
+              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+              <br></br>
+              Sorry for the inconvenience!
+            </p>
           </div>
         </div>
 

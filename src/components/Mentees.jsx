@@ -115,6 +115,11 @@ function Mentees() {
           <div class="col-lg-8 offset-2" style={{ alignItems: "center" }}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYpOJjpq_5FJNwkfNmSmp8WBspogrEHoGjyVmemv3fqARtHA/viewform?embedded=true"
               width="100%" height="975" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <p style={{textAlign: "center"}}>
+              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+              <br></br>
+              Sorry for the inconvenience!
+            </p>
           </div>
         </div>
 
