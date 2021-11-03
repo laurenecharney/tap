@@ -43,17 +43,17 @@ function Home() {
 
   return (
     <div className="home">
-      <div class="container" style={{ maxWidth: "100%" }}>
-        <div class="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40}}>
-          <div class="col-lg-4 offset-2">
+      <div className="container" style={{ maxWidth: "100%" }}>
+        <div className="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40}}>
+          <div className="col-lg-4 offset-2">
             <img
-              class= "img-fluid rounded mb-4 mb-lg-0"
+              className= "img-fluid rounded mb-4 mb-lg-0"
               src={page.homepageImage.url}
               alt="TAP Logo"
             />
           </div>
-          <div class="col-lg-4">
-            <h1 class="font-weight-light" style={{ color: "white"}}>The Afterschool Program</h1>
+          <div className="col-lg-4">
+            <h1 className="font-weight-light" style={{ color: "white"}}>The Afterschool Program</h1>
             <p style={{ color: "white"}}>
               The Afterschool Program, or TAP for short, is a non-profit program whose mission
               is to break the poverty cycle and close the achievement gap in children. Since 2011,
@@ -64,17 +64,17 @@ function Home() {
           </div>
         </div>
 
-        <div class="row align-items-center " style={{ paddingTop: 40, paddingBottom: 40 }}>
-          <div class="col-lg-4 offset-2">
+        <div className="row align-items-center " style={{ paddingTop: 40, paddingBottom: 40 }}>
+          <div className="col-lg-4 offset-2">
             <img
-              class="img-fluid rounded mb-4 mb-lg-0"
+              className="img-fluid rounded mb-4 mb-lg-0"
               src={taplogo}
               width = "400"
               alt="TAP Logo"
             />
           </div>
-          <div class="col-lg-4">
-            <h3 class="font-weight-bold">Our Mission</h3>
+          <div className="col-lg-4">
+            <h3 className="font-weight-bold">Our Mission</h3>
             <p>
               Founded in 2011, TAP is a collaboration between
               Fourteenth Avenue Baptist Church and Vanderbilt
