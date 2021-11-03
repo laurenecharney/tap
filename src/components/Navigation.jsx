@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+import taplogo from './taplogo.png';
+
 
 function Navigation(props) {
   return (
@@ -8,6 +10,12 @@ function Navigation(props) {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <Link class="navbar-brand" to="/">
+          <img
+              class= "img-fluid rounded mb-xs-0"
+              width = "50"
+              src={taplogo}
+              alt=""
+            />
             The Afterschool Program
           </Link>
           <div>
