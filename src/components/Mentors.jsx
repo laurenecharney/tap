@@ -1,10 +1,51 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
-import image from './MentorPhoto.jpg'
+import image from './MentorPhoto.jpg';
 
-function Mentors() {
-  return (
+const query = `
+{
+  tapMentorspageCollection {
+    items {
+      mentorsIntroText
+      topMentorsImage{
+        url
+      }
+      mentorsGoogleCalendar
+      mentorsApplication
+    }
+  }
+}
+`;
+
+function Mentors() {  
+const [page, setPage] = useState(null);
+
+useEffect(() => {
+  window
+    .fetch(`https://graphql.contentful.com/content/v1/spaces/v2hmb9eckh3e/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer gAy1xtMkzYZQ1kvD6d2IuiD4UFhItH0M4MgDeDqs4Bo`,
+      },
+      body: JSON.stringify({ query }),
+    })
+    .then((response) => response.json())
+    .then(({ data, errors }) => {
+      if (errors) {
+        console.error(errors);
+      }
+
+      setPage(data.tapMentorspageCollection.items[0]);
+    });
+}, []);
+
+if (!page) {
+  return "Loading...";
+}
+
+return (
     <div className="mentors">
       <div className="container" style={{ maxWidth: "100%" }}>
         <div className="row align-items-center" style={{ paddingTop: 35, paddingBottom: 35, backgroundColor: "#db0038" }}>
@@ -14,18 +55,14 @@ function Mentors() {
               style={{
                 resizeMode: 'contain'
               }}
-              src={image}
+              src={page.topMentorsImage.url}
               alt=""
             />
           </div>
           <div className="col-lg-4">
             <h1 className="font-weight-light" style={{ color: "white" }}>Our Mentors</h1>
             <h5 style={{ color: "white" }}>
-              Our mentors are Vanderbilt students from all different backgrounds.
-              The unqiue set of menotrs brings a diversity of thought and
-              educational strengths to our program. Each mentor is pair with a
-              student, and the mentor meets with their student at least once a
-              week.
+              {page.mentorsIntroText}
             </h5>
           </div>
         </div>
@@ -37,7 +74,7 @@ function Mentors() {
               <h1 className="font-weight-bold">Upcoming Events </h1>
             </div>
 
-            <iframe src="https://calendar.google.com/calendar/embed?src=c_bvg2cm616d6d56g935297rb1fc%40group.calendar.google.com&ctz=America%2FChicago"
+            <iframe src={page.mentorsGoogleCalendar}
               frameborder="0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
             {/* <div style={{display: 'flex'}}>
           <Calendar />
@@ -239,7 +276,7 @@ function Mentors() {
             <h3 className="font-weight-bold" style={{ textAlign: "center", paddingBottom: 25 }}>TAP Mentor Application</h3>
           </div>
           <div className="col-lg-8 offset-2" style={{ alignItems: "center" }}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCTdF2fx78Nkrw-RYDBeetnMNUMhT1KptRi6V3Y9uBYy3VVA/viewform?embedded=true"
+            <iframe src={page.mentorsApplication}
               width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             <p style={{textAlign: "center"}}>
               If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
