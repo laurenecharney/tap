@@ -3,6 +3,9 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import image from './MentorPhoto.jpg';
 
+
+
+{/* GRAPHQL QUERY */}
 const query = `
 {
   tapMentorspageCollection {
@@ -21,6 +24,8 @@ const query = `
 function Mentors() {  
 const [page, setPage] = useState(null);
 
+
+{/* CONNECTING TO CONTENTFUL */}
 useEffect(() => {
   window
     .fetch(`https://graphql.contentful.com/content/v1/spaces/v2hmb9eckh3e/`, {

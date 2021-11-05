@@ -1,6 +1,8 @@
 import React, {useState, useEffect } from "react";
 import taplogo from './taplogo.png';
 
+
+{/* GRAPHQL QUERY */}
 const query = `
 {
   tapMainCollection{
@@ -14,6 +16,7 @@ const query = `
 }
 `;
 
+{/* CONNECTING TO CONTENTFUL */}
 function Home() {
   const [page, setPage] = useState(null);
 
