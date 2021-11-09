@@ -30,49 +30,6 @@ function Mentors() {
           </div>
         </div>
 
-        {/* EMBEDDED GOOGLE CALENDAR */}
-        <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
-          <div className="col-lg-8 offset-2">
-            <div style={{ textAlign: "center", paddingBottom: 25 }}>
-              <h1 className="font-weight-bold">Upcoming Events </h1>
-            </div>
-
-            <iframe src="https://calendar.google.com/calendar/embed?src=c_bvg2cm616d6d56g935297rb1fc%40group.calendar.google.com&ctz=America%2FChicago"
-              frameborder="0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
-            {/* <div style={{display: 'flex'}}>
-          <Calendar />
-        </div> */}
-            <p style={{textAlign: "center"}}>
-              TAP usually meets from 4-5pm on Mondays, Tuesdays, and Wednesdays.
-              <br></br>
-              If the calendar does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
-              <br></br>
-              Sorry for the inconvenience!
-            </p>
-          </div>
-        </div>
-
-        {/* VIRTUAL ZOOM LINKS */}
-        <div className="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20, backgroundColor: "#f2f2f2" }}>
-          <div className="col-lg-4 offset-2" style={{ textAlign: "center" }}>
-            <h1 className="font-weight-bold">Join Your Virtual Zoom Session</h1>
-          </div>
-
-          <div className="col-lg-4" style={{ display: 'flex' }}>
-            <div className="col-md-12">
-              <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Monday</button>
-              </div>
-              <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}> Tuesday  </button>
-              </div>
-              <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Wednesday </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* MEETING RESOURCE LINKS */}
         <div className="row align-items-center" style={{ paddingBottom: 50, paddingTop: 50, textAlign: "center" }}>
           <h2 className="font-weight-bold" style={{ paddingBottom: 30 }}>Helpful Meeting Resources</h2>
