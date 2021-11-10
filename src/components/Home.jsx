@@ -1,5 +1,4 @@
 import React, {useState, useEffect } from "react";
-import taplogo from './taplogo.png';
 
 
 {/* GRAPHQL QUERY */}
@@ -7,10 +6,15 @@ const query = `
 {
   tapMainCollection{
     items{
+      homePageIntroText
       homepageImage{
         url
       }
-      homepageIntoText
+      ourMission
+      ourMissionImage{
+        url
+      }
+      upcomingEvents
     }
   }
 }
@@ -58,11 +62,7 @@ function Home() {
           <div className="col-lg-4">
             <h1 className="font-weight-light" style={{ color: "white"}}>The Afterschool Program</h1>
             <p style={{ color: "white"}}>
-              The Afterschool Program, or TAP for short, is a non-profit program whose mission
-              is to break the poverty cycle and close the achievement gap in children. Since 2011,
-              TAP has paired college student volunteers with Nashville students
-              to focus on literacy development and social enrichment, allowing children to tap
-              into their success!
+              {page.homePageIntroText}
             </p>
           </div>
         </div>
@@ -71,22 +71,14 @@ function Home() {
           <div className="col-lg-4 offset-2">
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src={taplogo}
+              src={page.ourMissionImage.url}
               width = "400"
               alt="TAP Logo"
             />
           </div>
           <div className="col-lg-4">
             <h3 className="font-weight-bold">Our Mission</h3>
-            <p>
-              Founded in 2011, TAP is a collaboration between
-              Fourteenth Avenue Baptist Church and Vanderbilt
-              University focusing on literacy development. The
-              organization continues to be entirely student-led.
-            </p>
-            <p>Out goal is to help close the achievement gap by
-              providing academic and social enrichment for the
-              youth that we serve.</p>
+            {page.ourMission}
           </div>
         </div>
 
@@ -97,7 +89,7 @@ function Home() {
               <h1 className="font-weight-bold">Upcoming Events </h1>
             </div>
 
-            <iframe src="https://calendar.google.com/calendar/embed?src=c_bvg2cm616d6d56g935297rb1fc%40group.calendar.google.com&ctz=America%2FChicago"
+            <iframe src={page.upcomingEvents}
               frameborder="0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
             {/* <div style={{display: 'flex'}}>
           <Calendar />

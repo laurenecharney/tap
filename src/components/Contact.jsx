@@ -1,6 +1,47 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
+
+
+{/* GRAPHQL QUERY */}
+const query = `
+{
+  tapContactPageCollection{
+    items{
+      email
+    }
+  }
+}
+`;
+
 
 function Contact() {
+
+  const [page, setPage] = useState(null);
+
+  useEffect(() => {
+    window
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/v2hmb9eckh3e/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer gAy1xtMkzYZQ1kvD6d2IuiD4UFhItH0M4MgDeDqs4Bo`,
+        },
+        body: JSON.stringify({ query }),
+      })
+      .then((response) => response.json())
+      .then(({ data, errors }) => {
+        if (errors) {
+          console.error(errors);
+        }
+
+        setPage(data.tapContactPageCollection.items[0]);
+      });
+  }, []);
+
+  if (!page) {
+    return "Loading...";
+  }
+  
+
   return (
     <div className="contact">
       <div className="container" style={{maxWidth: "100%"}}>

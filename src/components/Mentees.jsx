@@ -1,7 +1,47 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import mentees from './Mentees.jpeg';
 
+
+{/* GRAPHQL QUERY */}
+const query = `
+{
+  tapMenteesPageCollection {
+    items{
+      menteesIntroText
+      menteesApplication
+    }
+  }
+}
+`;
+
 function Mentees() {
+
+  const [page, setPage] = useState(null);
+
+  useEffect(() => {
+    window
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/v2hmb9eckh3e/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer gAy1xtMkzYZQ1kvD6d2IuiD4UFhItH0M4MgDeDqs4Bo`,
+        },
+        body: JSON.stringify({ query }),
+      })
+      .then((response) => response.json())
+      .then(({ data, errors }) => {
+        if (errors) {
+          console.error(errors);
+        }
+
+        setPage(data.tapMenteesPageCollection.items[0]);
+      });
+  }, []);
+
+  if (!page) {
+    return "Loading...";
+  }
+
   return (
     <div className="mentees">
       <div className="container" style={{ maxWidth: "100%" }}>
@@ -113,7 +153,7 @@ function Mentees() {
             <h3 className="font-weight-bold" style={{ textAlign: "center", paddingBottom: 25 }}>TAP Mentee Application</h3>
           </div>
           <div className="col-lg-8 offset-2" style={{ alignItems: "center" }}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYpOJjpq_5FJNwkfNmSmp8WBspogrEHoGjyVmemv3fqARtHA/viewform?embedded=true"
+            <iframe src={page.menteesApplication}
               width="100%" height="975" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             <p style={{textAlign: "center"}}>
               If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
