@@ -51,11 +51,20 @@ function About() {
       });
   }, []);
 
+  function UrlPatternValidation(URL){
+    const regex = new RegExp('https:\/\/www.google.com\/maps\/*');
+    if (!regex.test(URL.URL)){
+      console.log(URL.URL)
+        return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful";
+    } else{
+      return <iframe src = {URL.URL}
+      width="90%" height="450" allowFullScreen="" loading="lazy">Loading...</iframe>
+    };
+  };
+
   if (!page) {
     return "Loading...";
   }
-
-
 
   return (
     <div className="about">
@@ -115,8 +124,9 @@ function About() {
 
         <div className='row align-items-center' style={{backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
           <div className="col-lg-6 offset-1" style={{ display: 'flex' }}>
-              <iframe src={page.aboutTheChurchMapLink}
-              width="90%" height="450" allowFullScreen="" loading="lazy"></iframe>
+              {/*<iframe src={page.aboutTheChurchMapLink} onLoad={urlPatternValidation(page.aboutTheChurchMapLink)}
+              width="90%" height="450" allowFullScreen="" loading="lazy"></iframe>*/}
+              <UrlPatternValidation URL={page.aboutTheChurchMapLink}/>
           </div>
           <div className="col-lg-4">
             <h1 className="font-weight-bold" style={{color: "white"}}>About The Church</h1>
