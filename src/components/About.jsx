@@ -115,7 +115,7 @@ function About() {
 
         <div className='row align-items-center' style={{backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
           <div className="col-lg-6 offset-1" style={{ display: 'flex' }}>
-            <iframe src={page.aboutTheChurchMapLink}
+              <iframe src={page.aboutTheChurchMapLink}
               width="90%" height="450" allowFullScreen="" loading="lazy"></iframe>
           </div>
           <div className="col-lg-4">
