@@ -73,7 +73,7 @@ function About() {
             <h1 className="font-weight-bold">About Us</h1>
             <h4 className="font-weight-bold">Who We Are.</h4>
             <p>
-              {page.aboutUsText}}
+              {page.aboutUsText}
             </p>
           </div>
         </div>
