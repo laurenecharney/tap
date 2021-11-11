@@ -54,7 +54,6 @@ function About() {
   function UrlPatternValidation(URL){
     const regex = new RegExp('https:\/\/www.google.com\/maps\/*');
     if (!regex.test(URL.URL)){
-      console.log(URL.URL)
         return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful";
     } else{
       return <iframe src = {URL.URL}
