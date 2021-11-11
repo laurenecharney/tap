@@ -15,7 +15,6 @@ const query = `
 }
 `;
 
-
 function Mentors() {
 
   const [page, setPage] = useState(null);
@@ -43,6 +42,19 @@ function Mentors() {
   if (!page) {
     return "Loading...";
   }
+
+
+  // verify that the TAP exec team didn't accidentally switch the form and map link
+  function UrlPatternValidation(URL) {
+    const regex = new RegExp('https:\/\/docs.google.com\/forms\/*');    
+    if ( !regex.test(URL.URL) ) {
+      console.log(URL.URL)
+      return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful.";
+    } else {
+      return <iframe src={URL.URL} 
+      width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    };
+  };
   
 
   return (
@@ -232,9 +244,10 @@ function Mentors() {
           <div className="col-lg-12" style={{ textAlign: "center" }}>
             <h3 className="font-weight-bold" style={{ textAlign: "center", paddingBottom: 25 }}>TAP Mentor Application</h3>
           </div>
-          <div className="col-lg-8 offset-2" style={{ alignItems: "center" }}>
-            <iframe src={page.mentorsApplication}
-              width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div className="col-lg-8 offset-2" style={{ alignItems: "center" }} >
+            {/* <iframe src={page.mentorsApplication} 
+              width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+              <UrlPatternValidation URL={page.mentorsApplication}/>
             <p style={{textAlign: "center"}}>
               If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
               <br></br>
