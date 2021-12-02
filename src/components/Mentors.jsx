@@ -1,9 +1,8 @@
-import React, {useState, useEffect } from "react";
-import Calendar from 'react-calendar'
+import React, { useState, useEffect } from "react";
 import 'react-calendar/dist/Calendar.css';
 import image from './MentorPhoto.jpg'
 
-{/* GRAPHQL QUERY */}
+{/* GRAPHQL QUERY */ }
 const query = `
 {
   tapMentorspageCollection{
@@ -43,19 +42,17 @@ function Mentors() {
     return "Loading...";
   }
 
-
   // verify that the TAP exec team didn't accidentally switch the form and map link
   function UrlPatternValidation(URL) {
-    const regex = new RegExp('https:\/\/docs.google.com\/forms\/*');    
-    if ( !regex.test(URL.URL) ) {
+    const regex = new RegExp('https://docs.google.com/forms/*');
+    if (!regex.test(URL.URL)) {
       console.log(URL.URL)
       return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful.";
     } else {
-      return <iframe src={URL.URL} 
-      width="100%" height="1000" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+      return <iframe src={URL.URL} title="Displaying TAP's Google Form to sign up as a mentor."
+        width="100%" height="1000" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
     };
   };
-  
 
   return (
     <div className="mentors">
@@ -87,27 +84,27 @@ function Mentors() {
             <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Math</h2>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.mathgames.com/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Math Games</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.mathgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Math Games</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.coolmathgames.com/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Cool Math Games</button></a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://corbettmaths.com/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Corbettmaths</button></a>
-                </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://tangmath.com/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Greg Tang Math</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.coolmathgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Cool Math Games</button></a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://illuminations.nctm.org/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illuminations</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://corbettmaths.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Corbettmaths</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://illustrativemathematics.org/" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illustrative Math</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://tangmath.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Greg Tang Math</button></a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://illuminations.nctm.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illuminations</button></a>
+                </div>
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://illustrativemathematics.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illustrative Math</button></a>
                 </div>
               </div>
             </div>
@@ -115,27 +112,27 @@ function Mentors() {
             <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Science</h2>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://studio.code.org/courses" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Code.org</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://studio.code.org/courses" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Code.org</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://scratch.mit.edu/" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Scratch</button></a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://kids.frontiersin.org/" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Frontiers for Young Minds</button></a>
-                </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.chemicool.com/" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Chemicool</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://scratch.mit.edu/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Scratch</button></a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://www.biointeractive.org/" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Bio Interactive</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://kids.frontiersin.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Frontiers for Young Minds</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://www.hmhco.com/classzone-retired" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Exploring Earth Investigations</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.chemicool.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Chemicool</button></a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://www.biointeractive.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Bio Interactive</button></a>
+                </div>
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://www.hmhco.com/classzone-retired" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Exploring Earth Investigations</button></a>
                 </div>
               </div>
             </div>
@@ -145,27 +142,27 @@ function Mentors() {
             <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Reading</h2>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://storybird.com/read-picture-book" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Story Bird</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://storybird.com/read-picture-book" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Story Bird</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://mpt.pbslearningmedia.org/collection/btl07-ex/" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Between the Lions</button></a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.biblionasium.com/#tab/content-summer-picks" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Biblionasium</button></a>
-                </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://freerice.com/age-screen" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Free Rice</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://mpt.pbslearningmedia.org/collection/btl07-ex/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Between the Lions</button></a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="http://www.inklesstales.com/" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Inkless Tales</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.biblionasium.com/#tab/content-summer-picks" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Biblionasium</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://learn.khanacademy.org/" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Khan Academy</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://freerice.com/age-screen" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Free Rice</button></a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="http://www.inklesstales.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Inkless Tales</button></a>
+                </div>
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://learn.khanacademy.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Khan Academy</button></a>
                 </div>
               </div>
             </div>
@@ -173,27 +170,27 @@ function Mentors() {
             <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Writing</h2>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.readwritethink.org/classroom-resources/student-interactives" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>ReadWriteThink</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.readwritethink.org/classroom-resources/student-interactives" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>ReadWriteThink</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.funenglishgames.com/" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Fun English Games</button></a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://writeandimprove.com/?lang=en-GB" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Write and Improve</button></a>
-                </div>
-                <div className="col-md-6" style={{paddingBottom: 50 }}>
-                  <a href="https://www.quill.org/" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10,  border: 0, width: "100%" }}>Quill</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.funenglishgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Fun English Games</button></a>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://www.grammarbook.com/" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Grammar Book</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://writeandimprove.com/?lang=en-GB" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Write and Improve</button></a>
                 </div>
-                <div className="col-md-6" style={{paddingBottom: 15 }}>
-                  <a href="https://www.educationcity.com/us/" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Education City</button></a>
+                <div className="col-md-6" style={{ paddingBottom: 50 }}>
+                  <a href="https://www.quill.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, border: 0, width: "100%" }}>Quill</button></a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://www.grammarbook.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Grammar Book</button></a>
+                </div>
+                <div className="col-md-6" style={{ paddingBottom: 15 }}>
+                  <a href="https://www.educationcity.com/us/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Education City</button></a>
                 </div>
               </div>
             </div>
@@ -247,9 +244,9 @@ function Mentors() {
           <div className="col-lg-8 offset-2" style={{ alignItems: "center" }} >
             {/* <iframe src={page.mentorsApplication} 
               width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
-              <UrlPatternValidation URL={page.mentorsApplication}/>
-            <p style={{textAlign: "center"}}>
-              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+            <UrlPatternValidation URL={page.mentorsApplication} />
+            <p style={{ textAlign: "center" }}>
+              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{ color: "black" }}>tapintoyoursuccess@gmail.com</a>
               <br></br>
               Sorry for the inconvenience!
             </p>

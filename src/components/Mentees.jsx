@@ -1,8 +1,8 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import mentees from './Mentees.jpeg';
 
 
-{/* GRAPHQL QUERY */}
+{/* GRAPHQL QUERY */ }
 const query = `
 {
   tapMenteesPageCollection {
@@ -55,8 +55,8 @@ function Mentees() {
             />
           </div>
           <div className="col-lg-4">
-            <h1 className="font-weight-light" style={{color: "white"}}>Our Mentees</h1>
-            <h5 style={{color: "white"}}>
+            <h1 className="font-weight-light" style={{ color: "white" }}>Our Mentees</h1>
+            <h5 style={{ color: "white" }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -75,10 +75,10 @@ function Mentees() {
           </div>
           <div className="col-lg-4">
             <h2>How Our Mentors Can Help</h2>
-            <p>TAP mentors aim to provide academic and social enrichment to 
-              the mentees of the program. Mentors will work with mentees each 
-              week on homework assignments, enrichment activities, and other 
-              educational tasks. 
+            <p>TAP mentors aim to provide academic and social enrichment to
+              the mentees of the program. Mentors will work with mentees each
+              week on homework assignments, enrichment activities, and other
+              educational tasks.
             </p>
           </div>
         </div>
@@ -86,9 +86,9 @@ function Mentees() {
         <div className="row align-items-center my-5">
           <div className="col-lg-4 offset-2">
             <h2>Mentorship Structures</h2>
-            <p>Mentors work one-on-one with their student mentees to complete 
-              their homework and other educational tasks. Mentors and mentees 
-              can also bond over non-academic interests they share. TAP meets 
+            <p>Mentors work one-on-one with their student mentees to complete
+              their homework and other educational tasks. Mentors and mentees
+              can also bond over non-academic interests they share. TAP meets
               3 days a week (Tuesday, Wednesday, and Thursday) for one hour.</p>
           </div>
           <div className="col-lg-4" style={{ alignItems: "center" }}>
@@ -126,22 +126,22 @@ function Mentees() {
             <div className="row">
               <h3 className="font-weight-semi-bold">Application Process</h3>
               <p>
-                Fill out the short Google Form embedded below, and we will contact 
+                Fill out the short Google Form embedded below, and we will contact
                 you with next steps to join the program!
               </p>
             </div>
             <div className="row">
               <h3 className="font-weight-semi-bold">Why TAP</h3>
               <p>
-                The Afterschool Program fosters mentorships that improve students' 
+                The Afterschool Program fosters mentorships that improve students'
                 academic and personal lives in the long term.
               </p>
             </div>
             <div className="row">
               <h3 className="font-weight-semi-bold">Join Our Email Chain</h3>
               <p>
-                Join our email chain to stay up-to-date with all TAP programming 
-                and events. 
+                Join our email chain to stay up-to-date with all TAP programming
+                and events.
               </p>
             </div>
           </div>
@@ -153,10 +153,10 @@ function Mentees() {
             <h3 className="font-weight-bold" style={{ textAlign: "center", paddingBottom: 25 }}>TAP Mentee Application</h3>
           </div>
           <div className="col-lg-8 offset-2" style={{ alignItems: "center" }}>
-            <iframe src={page.menteesApplication}
+            <iframe src={page.menteesApplication} title="Displaying TAP's Google Form to sign up as a mentee."
               width="100%" height="975" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-            <p style={{textAlign: "center"}}>
-              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+            <p style={{ textAlign: "center" }}>
+              If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{ color: "black" }}>tapintoyoursuccess@gmail.com</a>
               <br></br>
               Sorry for the inconvenience!
             </p>

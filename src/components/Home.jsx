@@ -168,8 +168,8 @@ function Home() {
               <h1 className="font-weight-bold">Upcoming Events </h1>
             </div>
 
-            <iframe src={page.upcomingEvents}
-              frameBorder="0" width="100%" height="550" frameBorder="0" scrolling="no"></iframe>
+            <iframe src={page.upcomingEvents} title="Displaying TAP's Google Calendar with upcoming events."
+              frameBorder="0" width="100%" height="550" scrolling="no"></iframe>
           </div>
         </div>
 

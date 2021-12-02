@@ -1,8 +1,6 @@
-import React, {useState, useEffect } from "react";
-import taplogowide from './taplogo-wide.png';
-import signup from './SignUp.jpeg';
+import React, { useState, useEffect } from "react";
 
-{/* GRAPHQL QUERY */}
+{/* GRAPHQL QUERY */ }
 const query = `
 {
   tapAboutPageCollection {
@@ -51,13 +49,13 @@ function About() {
       });
   }, []);
 
-  function UrlPatternValidation(URL){
-    const regex = new RegExp('https:\/\/www.google.com\/maps\/*');
-    if (!regex.test(URL.URL)){
-        return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful";
-    } else{
-      return <iframe src = {URL.URL}
-      width="90%" height="450" allowFullScreen="" loading="lazy">Loading...</iframe>
+  function UrlPatternValidation(URL) {
+    const regex = new RegExp('https://www.google.com/maps/*');
+    if (!regex.test(URL.URL)) {
+      return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful";
+    } else {
+      return <iframe src={URL.URL} title="Embedded Google Map showing the location of the church."
+        width="90%" height="450" allowFullScreen="" loading="lazy">Loading...</iframe>
     };
   };
 
@@ -68,7 +66,7 @@ function About() {
   return (
     <div className="about">
       <div className="container" style={{ maxWidth: "100%" }}>
-        <div className="row align-items-center" style={{ paddingTop: 40, paddingBottom: 40}}>
+        <div className="row align-items-center" style={{ paddingTop: 40, paddingBottom: 40 }}>
           <div className="col-lg-6 offset-1" style={{ display: 'flex' }}>
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
@@ -86,7 +84,7 @@ function About() {
           </div>
         </div>
 
-        <div className='row align-items-center' style={{backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
+        <div className='row align-items-center' style={{ backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
           <div className="col-lg-6 offset-1">
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
@@ -97,14 +95,14 @@ function About() {
             />
           </div>
           <div className="col-lg-4">
-            <h1 className="font-weight-bold" style={{color: "white"}}>About Our Mentors</h1>
-            <p style={{color: "white"}}>
+            <h1 className="font-weight-bold" style={{ color: "white" }}>About Our Mentors</h1>
+            <p style={{ color: "white" }}>
               {page.aboutOurMentorsText}
             </p>
           </div>
         </div>
 
-        <div className='row align-items-center' style={{backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
+        <div className='row align-items-center' style={{ backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
           <div className="col-lg-6 offset-1" style={{ display: 'flex' }}>
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
@@ -114,34 +112,32 @@ function About() {
             />
           </div>
           <div className="col-lg-4">
-            <h1 className="font-weight-bold" style={{color: "white"}}>About Our Mentees</h1>
-            <p style={{color: "white"}}>
+            <h1 className="font-weight-bold" style={{ color: "white" }}>About Our Mentees</h1>
+            <p style={{ color: "white" }}>
               {page.aboutOurMenteesText}
             </p>
           </div>
         </div>
 
-        <div className='row align-items-center' style={{backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
+        <div className='row align-items-center' style={{ backgroundColor: "#53bac1", paddingBottom: 20, paddingTop: 20 }}>
           <div className="col-lg-6 offset-1" style={{ display: 'flex' }}>
-              {/*<iframe src={page.aboutTheChurchMapLink} onLoad={urlPatternValidation(page.aboutTheChurchMapLink)}
-              width="90%" height="450" allowFullScreen="" loading="lazy"></iframe>*/}
-              <UrlPatternValidation URL={page.aboutTheChurchMapLink}/>
+            <UrlPatternValidation URL={page.aboutTheChurchMapLink} />
           </div>
           <div className="col-lg-4">
-            <h1 className="font-weight-bold" style={{color: "white"}}>About The Church</h1>
-            <h3 className="font-weight-light" style={{color: "white"}}>14th Ave Missionary Baptist Church</h3>
-            <p style={{color: "white"}}>
+            <h1 className="font-weight-bold" style={{ color: "white" }}>About The Church</h1>
+            <h3 className="font-weight-light" style={{ color: "white" }}>14th Ave Missionary Baptist Church</h3>
+            <p style={{ color: "white" }}>
               {page.aboutTheChurchText}
             </p>
           </div>
         </div>
 
         <div className='row align-items-center' style={{ paddingBottom: 20, paddingTop: 20 }}>
-            <h1 className="font-weight-bold" style={{textAlign: "center"}}>Meet The Leadership Team</h1>
+          <h1 className="font-weight-bold" style={{ textAlign: "center" }}>Meet The Leadership Team</h1>
         </div>
 
         <div className="row" style={{ paddingTop: 25, paddingBottom: 25 }}>
-          <div className="col-lg-4" style={{textAlign: "center"}}>
+          <div className="col-lg-4" style={{ textAlign: "center" }}>
             <h3 className="font-weight-bold">Caroline Riedl</h3>
             <h5>
               <b>Role:</b> Program Director
@@ -149,7 +145,7 @@ function About() {
               <b>Email:</b> caroline.c.riedl@vanderbilt.edu
             </h5>
           </div>
-          <div className="col-lg-4" style={{textAlign: "center"}}>
+          <div className="col-lg-4" style={{ textAlign: "center" }}>
             <h3 className="font-weight-bold">Sam Suazo</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator
@@ -157,7 +153,7 @@ function About() {
               <b>Email:</b> samantha.r.suazo@vanderbilt.edu
             </h5>
           </div>
-          <div className="col-lg-4" style={{textAlign: "center"}}>
+          <div className="col-lg-4" style={{ textAlign: "center" }}>
             <h3 className="font-weight-bold">Faith Kwentua</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator
