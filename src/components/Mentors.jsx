@@ -52,7 +52,7 @@ function Mentors() {
       return "Wrong link! Check that the Google Form and Google Map links are in the correct locations in Contentful.";
     } else {
       return <iframe src={URL.URL} 
-      width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      width="100%" height="1000" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
     };
   };
   

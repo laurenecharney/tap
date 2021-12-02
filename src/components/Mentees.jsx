@@ -154,7 +154,7 @@ function Mentees() {
           </div>
           <div className="col-lg-8 offset-2" style={{ alignItems: "center" }}>
             <iframe src={page.menteesApplication}
-              width="100%" height="975" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              width="100%" height="975" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
             <p style={{textAlign: "center"}}>
               If the form does not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
               <br></br>

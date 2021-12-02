@@ -1,8 +1,8 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import taplogo from './taplogo.png';
 
 
-{/* GRAPHQL QUERY */}
+{/* GRAPHQL QUERY */ }
 const query = `
 {
   tapMainCollection{
@@ -21,7 +21,7 @@ const query = `
 }
 `;
 
-{/* CONNECTING TO CONTENTFUL */}
+{/* CONNECTING TO CONTENTFUL */ }
 function Home() {
   const [page, setPage] = useState(null);
 
@@ -46,53 +46,50 @@ function Home() {
   }, []);
 
   if (!page) {
-    return(
+    return (
       <div className="home">
         <div className="container" style={{ maxWidth: "100%" }}>
-          <div className="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40}}>
+          <div className="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40 }}>
             <div className="col-lg-4 offset-2">
               <img
-                className= "img-fluid rounded mb-4 mb-lg-0"
+                className="img-fluid rounded mb-4 mb-lg-0"
                 src={taplogo}
                 alt="TAP Logo"
               />
             </div>
             <div className="col-lg-4">
-              <h1 className="font-weight-light" style={{ color: "white"}}>The Afterschool Program</h1>
-              <p style={{ color: "white"}}>
-              Email <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "white"}}>tapintoyoursuccess@gmail.com</a> to learn more about the overview of 
-              The Afterschool Program. 
+              <h1 className="font-weight-light" style={{ color: "white" }}>The Afterschool Program</h1>
+              <p style={{ color: "white" }}>
+                Email <a href="mailto:tapintoyoursuccess@gmail.com" style={{ color: "white" }}>tapintoyoursuccess@gmail.com</a> to learn more about the overview of
+                The Afterschool Program.
               </p>
             </div>
           </div>
-  
+
           <div className="row align-items-center " style={{ paddingTop: 40, paddingBottom: 40 }}>
             <div className="col-lg-4 offset-2">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
                 src={taplogo}
-                width = "400"
+                width="400"
                 alt="TAP Logo"
               />
             </div>
             <div className="col-lg-4">
               <h3 className="font-weight-bold">Our Mission</h3>
-              Email <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a> to learn more about our mission. 
+              Email <a href="mailto:tapintoyoursuccess@gmail.com" style={{ color: "black" }}>tapintoyoursuccess@gmail.com</a> to learn more about our mission.
             </div>
           </div>
-  
-                  {/* EMBEDDED GOOGLE CALENDAR */}
-            <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
+
+          {/* EMBEDDED GOOGLE CALENDAR */}
+          <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
             <div className="col-lg-8 offset-2">
               <div style={{ textAlign: "center", paddingBottom: 25 }}>
                 <h1 className="font-weight-bold">Upcoming Events </h1>
               </div>
-  
-          {/* <div style={{display: 'flex'}}>
-          <Calendar />
-        </div> */}
-              <p style={{textAlign: "center"}}>
-                The calendar currently can not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "black"}}>tapintoyoursuccess@gmail.com</a>
+
+              <p style={{ textAlign: "center" }}>
+                The calendar currently can not load, please contact us at <a href="mailto:tapintoyoursuccess@gmail.com" style={{ color: "black" }}>tapintoyoursuccess@gmail.com</a>
                 <br></br>
                 TAP usually meets from 4-5pm on Mondays, Tuesdays, and Wednesdays.
                 <br></br>
@@ -100,13 +97,13 @@ function Home() {
               </p>
             </div>
           </div>
-  
+
           {/* VIRTUAL ZOOM LINKS */}
           <div className="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20, backgroundColor: "#f2f2f2" }}>
             <div className="col-lg-4 offset-2" style={{ textAlign: "center" }}>
               <h1 className="font-weight-bold">Join Your Virtual Zoom Session</h1>
             </div>
-  
+
             <div className="col-lg-4" style={{ display: 'flex' }}>
               <div className="col-md-12">
                 <div className="row" style={{ padding: 20 }}>
@@ -121,7 +118,7 @@ function Home() {
               </div>
             </div>
           </div>
-  
+
           <div style={{ padding: 40 }}>
             <p>.</p>
           </div>
@@ -133,17 +130,17 @@ function Home() {
   return (
     <div className="home">
       <div className="container" style={{ maxWidth: "100%" }}>
-        <div className="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40}}>
+        <div className="row align-items-center" style={{ backgroundColor: "#519dd9", paddingBottom: 40, paddingTop: 40 }}>
           <div className="col-lg-4 offset-2">
             <img
-              className= "img-fluid rounded mb-4 mb-lg-0"
+              className="img-fluid rounded mb-4 mb-lg-0"
               src={page.homepageImage.url}
               alt="TAP Logo"
             />
           </div>
           <div className="col-lg-4">
-            <h1 className="font-weight-light" style={{ color: "white"}}>The Afterschool Program</h1>
-            <p style={{ color: "white"}}>
+            <h1 className="font-weight-light" style={{ color: "white" }}>The Afterschool Program</h1>
+            <p style={{ color: "white" }}>
               {page.homePageIntroText}
             </p>
           </div>
@@ -154,7 +151,7 @@ function Home() {
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
               src={page.ourMissionImage.url}
-              width = "400"
+              width="400"
               alt="TAP Logo"
             />
           </div>
@@ -164,18 +161,15 @@ function Home() {
           </div>
         </div>
 
-                {/* EMBEDDED GOOGLE CALENDAR */}
-                <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
+        {/* EMBEDDED GOOGLE CALENDAR */}
+        <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
           <div className="col-lg-8 offset-2">
             <div style={{ textAlign: "center", paddingBottom: 25 }}>
               <h1 className="font-weight-bold">Upcoming Events </h1>
             </div>
 
             <iframe src={page.upcomingEvents}
-              frameborder="0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
-            {/* <div style={{display: 'flex'}}>
-          <Calendar />
-        </div> */}
+              frameBorder="0" width="100%" height="550" frameBorder="0" scrolling="no"></iframe>
           </div>
         </div>
 
