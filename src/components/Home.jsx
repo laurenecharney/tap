@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import taplogo from './taplogo.png';
 
 
-{/* GRAPHQL QUERY */ }
+
 const query = `
 {
   tapMainCollection{
@@ -21,7 +21,7 @@ const query = `
 }
 `;
 
-{/* CONNECTING TO CONTENTFUL */ }
+
 function Home() {
   const [page, setPage] = useState(null);
 
@@ -81,7 +81,7 @@ function Home() {
             </div>
           </div>
 
-          {/* EMBEDDED GOOGLE CALENDAR */}
+
           <div className="row" style={{ paddingTop: 35, paddingBottom: 35 }}>
             <div className="col-lg-8 offset-2">
               <div style={{ textAlign: "center", paddingBottom: 25 }}>
@@ -98,7 +98,7 @@ function Home() {
             </div>
           </div>
 
-          {/* VIRTUAL ZOOM LINKS */}
+
           <div className="row align-items-center" style={{ paddingTop: 20, paddingBottom: 20, backgroundColor: "#f2f2f2" }}>
             <div className="col-lg-4 offset-2" style={{ textAlign: "center" }}>
               <h1 className="font-weight-bold">Join Your Virtual Zoom Session</h1>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import 'react-calendar/dist/Calendar.css';
 import image from './MentorPhoto.jpg'
 
-{/* GRAPHQL QUERY */ }
+
 const query = `
 {
   tapMentorspageCollection{
