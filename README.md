@@ -48,6 +48,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Deployment
 
-This application is deployed at [theafterschoolprogram.netlify.app]
+This application is deployed at [theafterschoolprogram.netlify.app](theafterschoolprogram.netlify.app)
 
 Each time code is committed and pushed to this repository, you will have to head to https://app.netlify.com/sites/theafterschoolprogram/overview. Once at the website, click the current production deploy. Preview the changes and then publish for the updates to go live. More information on deployment can be found here: [Netlify Support](https://www.netlify.com/support/?_gl=1*dotzzw*_gcl_aw*R0NMLjE2Mzg3NTY1NTQuQ2owS0NRaUE0N0dOQmhEckFSSXNBS2ZaMnJDcUN3REl4cmJYU0ZDTXJWN1JXaHYwM0ptRXJhV3VVT2tKazA2N3VfRm5kaEtzQWFPWWRvd2FBbW51RUFMd193Y0I.&_ga=2.184642729.1405315510.1638744948-1050734222.1638744948&_gac=1.225415784.1638756554.Cj0KCQiA47GNBhDrARIsAKfZ2rCqCwDIxrbXSFCMrV7RWhv03JmEraWuUOkJk067u_FndhKsAaOYdowaAmnuEALw_wcB)
