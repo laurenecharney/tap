@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Getting Started
+## Getting Started with Code
 ### Node.js
 Download Node.js which can be found here: https://nodejs.org/en/download/
 
@@ -14,7 +14,7 @@ So we are building a React app with multiple routes and it requires a package re
 ### VS Code
 Download VS Code as IDE: https://code.visualstudio.com
 
-## To Run
+## To Run Local Code
 
 After successfully cloning the code. Open folder in VSCode. Next open a terminal in VS Code. Save your files. 
 
@@ -37,16 +37,17 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Deployment
+## Contentful
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application is deployed attheafterschoolprogram.netlify.app 
+
+Each time code is committed and pushed to this repository, you will have to head to https://app.netlify.com/sites/theafterschoolprogram/overview. Once at the website, click the current production deploy. Preview the changes and then publish for the updates to go live. More information on deployment can be found here: [Netlify Support](https://www.netlify.com/support/?_gl=1*dotzzw*_gcl_aw*R0NMLjE2Mzg3NTY1NTQuQ2owS0NRaUE0N0dOQmhEckFSSXNBS2ZaMnJDcUN3REl4cmJYU0ZDTXJWN1JXaHYwM0ptRXJhV3VVT2tKazA2N3VfRm5kaEtzQWFPWWRvd2FBbW51RUFMd193Y0I.&_ga=2.184642729.1405315510.1638744948-1050734222.1638744948&_gac=1.225415784.1638756554.Cj0KCQiA47GNBhDrARIsAKfZ2rCqCwDIxrbXSFCMrV7RWhv03JmEraWuUOkJk067u_FndhKsAaOYdowaAmnuEALw_wcB)
