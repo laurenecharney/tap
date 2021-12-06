@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import mentees from './Mentees.jpeg';
 
 
-{/* GRAPHQL QUERY */ }
+
 const query = `
 {
   tapMenteesPageCollection{

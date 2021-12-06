@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-{/* GRAPHQL QUERY */ }
+
 const query = `
 {
   tapAboutPageCollection {
@@ -132,12 +132,19 @@ function About() {
           </div>
         </div>
 
-        <div className='row align-items-center' style={{ paddingBottom: 20, paddingTop: 20 }}>
+        <div className='row align-items-center' style={{ paddingBottom: 20, paddingTop: 50 }}>
           <h1 className="font-weight-bold" style={{ textAlign: "center" }}>Meet The Leadership Team</h1>
         </div>
 
         <div className="row" style={{ paddingTop: 25, paddingBottom: 25 }}>
           <div className="col-lg-4" style={{ textAlign: "center" }}>
+          <img
+              className="img-fluid rounded"
+              width='50%'
+              style={{padding: 15}}
+              src={page.aboutUsImage.url}
+              alt="TAP Logo"
+            />
             <h3 className="font-weight-bold">Caroline Riedl</h3>
             <h5>
               <b>Role:</b> Program Director
@@ -146,6 +153,13 @@ function About() {
             </h5>
           </div>
           <div className="col-lg-4" style={{ textAlign: "center" }}>
+          <img
+              className="img-fluid rounded"
+              width='50%'
+              style={{padding: 15}}
+              src={page.aboutUsImage.url}
+              alt="TAP Logo"
+            />
             <h3 className="font-weight-bold">Sam Suazo</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator
@@ -154,6 +168,13 @@ function About() {
             </h5>
           </div>
           <div className="col-lg-4" style={{ textAlign: "center" }}>
+          <img
+              className="img-fluid rounded"
+              width='50%'
+              style={{padding: 15}}
+              src={page.aboutUsImage.url}
+              alt="TAP Logo"
+            />
             <h3 className="font-weight-bold">Faith Kwentua</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator

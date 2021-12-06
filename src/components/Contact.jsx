@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 
 
-{/* GRAPHQL QUERY */}
+
 const query = `
 {
   tapContactPageCollection{
