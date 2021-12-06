@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import taplogo from './taplogo.png';
 
 
-
 const query = `
 {
   tapMainCollection{
@@ -20,6 +19,10 @@ const query = `
   }
 }
 `;
+
+function handleClick() {
+  window.open('https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvanderbilt.zoom.us%2Fj%2F6760925998&data=02%7C01%7Csamantha.r.suazo%40mail-service-3-mx.vanderbilt.edu%7C5f756e39301e4cb0aea608d852b8c22b%7Cba5a7f39e3be4ab3b45067fa80faecad%7C0%7C0%7C637350300782443480&sdata=LaQAU3Jz8F0BOiHGS1DT2d%2FGjFWmmP4LROzVZK1NOrE%3D&reserved=0https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvanderbilt.zoom.us%2Fj%2F6760925998&data=02%7C01%7Csamantha.r.suazo%40mail-service-3-mx.vanderbilt.edu%7C5f756e39301e4cb0aea608d852b8c22b%7Cba5a7f39e3be4ab3b45067fa80faecad%7C0%7C0%7C637350300782443480&sdata=LaQAU3Jz8F0BOiHGS1DT2d%2FGjFWmmP4LROzVZK1NOrE%3D&reserved=0', '_blank');
+}
 
 
 function Home() {
@@ -107,13 +110,7 @@ function Home() {
             <div className="col-lg-4" style={{ display: 'flex' }}>
               <div className="col-md-12">
                 <div className="row" style={{ padding: 20 }}>
-                  <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Monday</button>
-                </div>
-                <div className="row" style={{ padding: 20 }}>
-                  <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}> Tuesday  </button>
-                </div>
-                <div className="row" style={{ padding: 20 }}>
-                  <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Wednesday </button>
+                  <button onClick={handleClick} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}> Join the Zoom </button>
                 </div>
               </div>
             </div>
@@ -182,14 +179,8 @@ function Home() {
           <div className="col-lg-4" style={{ display: 'flex' }}>
             <div className="col-md-12">
               <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Monday</button>
-              </div>
-              <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}> Tuesday  </button>
-              </div>
-              <div className="row" style={{ padding: 20 }}>
-                <button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}>Wednesday </button>
-              </div>
+                  <button onClick={handleClick} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0 }}> Join the Zoom </button>
+                </div>
             </div>
           </div>
         </div>
