@@ -45,6 +45,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Contentful
 
+[Contentful link](https://app.contentful.com/spaces/v2hmb9eckh3e/home)
+
+To change the website text or pictures, navigate to the "Content" tab on top of the page.
+On the left side, under "Content Type," you can choose which page to update (tap-home-page, tap-about, tap-mentors-page, tap-about-page, tap-mentees-page, tap-contact-page, and Mentor Resources). In each of these pages, you can edit the text or pictures on the website. Once finished, click the "Publish Changes" button on the right to publish the changes to the website. Make sure to reload the webpage to see the changes!
 
 ## Deployment
 
