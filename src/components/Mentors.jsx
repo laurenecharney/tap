@@ -84,116 +84,116 @@ function Mentors() {
           <h2 className="font-weight-bold" style={{ paddingBottom: 30 }}>Helpful Meeting Resources</h2>
 
           <div className="row" style={{ paddingBottom: 25 }}>
-            <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
+            <div className="col-md-4 offset-1" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Math</h2>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.mathgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Math Games</button></a>
+                  <button onClick={() => window.open("https://www.mathgames.com/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Math Games </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.coolmathgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Cool Math Games</button></a>
+                  <button onClick={() => window.open("https://www.coolmathgames.com/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Cool Math Games </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://corbettmaths.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Corbettmaths</button></a>
+                  <button onClick={() => window.open("https://corbettmaths.com/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Corbettmaths </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://tangmath.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Greg Tang Math</button></a>
+                  <button onClick={() => window.open("https://tangmath.com/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Greg Tang Math </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://illuminations.nctm.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illuminations</button></a>
+                  <button onClick={() => window.open("https://illuminations.nctm.org/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Illuminations </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://illustrativemathematics.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 20, border: 0 }}>Illustrative Math</button></a>
+                  <button onClick={() => window.open("https://illustrativemathematics.org/", '_blank')} style={{ background: "#DB0038", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Illustrative Math </button>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
+            <div className="col-md-4 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Science</h2>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://studio.code.org/courses" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Code.org</button></a>
+                  <button onClick={() => window.open("https://studio.code.org/courses", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Code.org </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://scratch.mit.edu/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Scratch</button></a>
+                  <button onClick={() => window.open("https://scratch.mit.edu/", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Scratch </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://kids.frontiersin.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Frontiers for Young Minds</button></a>
+                  <button onClick={() => window.open("https://kids.frontiersin.org/", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Frontiers for Young Minds </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.chemicool.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Chemicool</button></a>
+                  <button onClick={() => window.open("https://www.chemicool.com/", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Chemicool </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://www.biointeractive.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Bio Interactive</button></a>
+                  <button onClick={() => window.open("https://www.biointeractive.org/", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Bio Interactive </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://www.hmhco.com/classzone-retired" rel="noopener noreferrer" target="_blank"><button style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Exploring Earth Investigations</button></a>
+                  <button onClick={() => window.open("https://www.hmhco.com/classzone-retired", '_blank')} style={{ background: "#f7c200", color: "#000", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Exploring Earth Investigations </button>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
+            <div className="col-md-4 offset-1" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Reading</h2>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://storybird.com/read-picture-book" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Story Bird</button></a>
+                  <button onClick={() => window.open("https://storybird.com/read-picture-book", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Story Bird </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://mpt.pbslearningmedia.org/collection/btl07-ex/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Between the Lions</button></a>
+                  <button onClick={() => window.open("https://mpt.pbslearningmedia.org/collection/btl07-ex/", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Between the Lions </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.biblionasium.com/#tab/content-summer-picks" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Biblionasium</button></a>
+                  <button onClick={() => window.open("https://www.biblionasium.com/#tab/content-summer-picks", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Biblionasium </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://freerice.com/age-screen" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Free Rice</button></a>
+                  <button onClick={() => window.open("https://freerice.com/age-screen", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Free Rice </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="http://www.inklesstales.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Inkless Tales</button></a>
+                  <button onClick={() => window.open("http://www.inklesstales.com/", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Inkless Tales </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://learn.khanacademy.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Khan Academy</button></a>
+                  <button onClick={() => window.open("https://learn.khanacademy.org/", '_blank')} style={{ background: "#53BAC1", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Khan Academy </button>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-3 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
+            <div className="col-md-4 offset-2" style={{ backgroundColor: "#f2f2f2", borderRadius: 15 }}>
               <h2 className="font-weight-light" style={{ paddingBottom: 20, paddingTop: 20 }}>Writing</h2>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.readwritethink.org/classroom-resources/student-interactives" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>ReadWriteThink</button></a>
+                  <button onClick={() => window.open("https://www.readwritethink.org/classroom-resources/student-interactives", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> ReadWriteThink </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.funenglishgames.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Fun English Games</button></a>
+                  <button onClick={() => window.open("https://www.funenglishgames.com/", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Fun English Games </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://writeandimprove.com/?lang=en-GB" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Write and Improve</button></a>
+                  <button onClick={() => window.open("https://writeandimprove.com/?lang=en-GB", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Write and Improve </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 50 }}>
-                  <a href="https://www.quill.org/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, border: 0, width: "100%" }}>Quill</button></a>
+                  <button onClick={() => window.open("https://www.quill.org/", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Quill </button>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://www.grammarbook.com/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Grammar Book</button></a>
+                  <button onClick={() => window.open("https://www.grammarbook.com/", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Grammar Book </button>
                 </div>
                 <div className="col-md-6" style={{ paddingBottom: 15 }}>
-                  <a href="https://www.educationcity.com/us/" rel="noopener noreferrer" target="_blank"><button style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 20, border: 0, width: "100%" }}>Education City</button></a>
+                  <button onClick={() => window.open("https://www.educationcity.com/us/", '_blank')} style={{ background: "#519DD9", color: "#fff", borderRadius: 10, padding: 25, border: 0, width: "100%" }}> Education City </button>
                 </div>
               </div>
             </div>
