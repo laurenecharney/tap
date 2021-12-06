@@ -5,9 +5,21 @@ import mentees from './Mentees.jpeg';
 {/* GRAPHQL QUERY */ }
 const query = `
 {
-  tapMenteesPageCollection {
+  tapMenteesPageCollection{
     items{
       menteesIntroText
+      howOurMentorsCanHelpText
+      howOurMentorsCanHelpImage{
+        url
+      }
+      mentoringStructuresText
+      mentorshipStructuresImage{
+        url
+      }
+      menteeTestimoniesText
+      menteeTestimoniesImage{
+        url
+      }
       menteesApplication
     }
   }
@@ -69,16 +81,13 @@ function Mentees() {
           <div className="col-lg-4 offset-2" style={{ alignItems: "center" }}>
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/300x300"
+              src={page.howOurMentorsCanHelpImage.url}
               alt=""
             />
           </div>
           <div className="col-lg-4">
             <h2>How Our Mentors Can Help</h2>
-            <p>TAP mentors aim to provide academic and social enrichment to
-              the mentees of the program. Mentors will work with mentees each
-              week on homework assignments, enrichment activities, and other
-              educational tasks.
+            <p>{page.howOurMentorsCanHelpText}
             </p>
           </div>
         </div>
@@ -86,34 +95,28 @@ function Mentees() {
         <div className="row align-items-center my-5">
           <div className="col-lg-4 offset-2">
             <h2>Mentorship Structures</h2>
-            <p>Mentors work one-on-one with their student mentees to complete
-              their homework and other educational tasks. Mentors and mentees
-              can also bond over non-academic interests they share. TAP meets
-              3 days a week (Tuesday, Wednesday, and Thursday) for one hour.</p>
+            <p>{page.mentoringStructuresText}</p>
           </div>
           <div className="col-lg-4" style={{ alignItems: "center" }}>
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/300x300"
+              src={page.mentorshipStructuresImage.url}
               alt=""
             />
           </div>
         </div>
-
+      
         <div className="row align-items-center my-5">
           <div className="col-lg-4 offset-2" style={{ alignItems: "center" }}>
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/300x300"
+              src={page.menteeTestimoniesImage.url}
               alt=""
             />
           </div>
           <div className="col-lg-4">
             <h2>Mentee Testimonies</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.</p>
+            <p>{page.menteeTestimoniesText}</p>
           </div>
         </div>
 
