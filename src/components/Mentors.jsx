@@ -7,6 +7,9 @@ const query = `
 {
   tapMentorspageCollection{
     items{
+      topMentorsImage{
+        url
+      }
       mentorsIntroText
       mentorsApplication
     }
@@ -64,7 +67,7 @@ function Mentors() {
               style={{
                 resizeMode: 'contain'
               }}
-              src={image}
+              src={page.topMentorsImage.url}
               alt=""
             />
           </div>

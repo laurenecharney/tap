@@ -6,7 +6,13 @@ const query = `
 {
   tapContactPageCollection{
     items{
+      contactUsImage{
+        url
+      }
+      instagram
       email
+      facebook
+      facultyAdvisor
     }
   }
 }
@@ -50,23 +56,23 @@ function Contact() {
           <div className="col-lg-5 offset-2">
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              src={page.contactUsImage.url}
               alt=""
             />
           </div>
           <div className="col-lg-5">
             <h1 className="font-weight-light" style={{color: "white"}}>Contact Us</h1>
             <h5 style={{paddingTop: 10, paddingBottom: 10, color: "white"}}>
-              <b>Email:</b> <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "white"}}>tapintoyoursuccess@gmail.com</a>
+              <b>Email:</b> <a href="mailto:tapintoyoursuccess@gmail.com" style={{color: "white"}}>{page.email}</a>
             </h5>
             <h5 style={{paddingTop: 10, paddingBottom: 10, color: "white"}}>
-              <b>Instagram:</b> <a href="https://www.instagram.com/tapnashville/" style={{color: "white"}}>@tapnashville</a>
+            <b>Instagram:</b> <a href={page.instagram} style={{color: "white"}}>@tapnashville</a>
             </h5>
             <h5 style={{paddingTop: 10, paddingBottom: 10, color: "white"}}>
-              <b>Facebook:</b> <a href="https://www.facebook.com/vanderbiltTAP/" style={{color: "white"}}>The Afterschool Program</a>
+              <b>Facebook:</b> <a href={page.facebook} style={{color: "white"}}>The Afterschool Program</a>
             </h5>
             <h5 style={{paddingTop: 10, paddingBottom: 10, color: "white"}}>
-              <b>Faculty Advisor:</b> Ms. Tam
+              <b>Faculty Advisor:</b> {page.facultyAdvisor}
             </h5>
           </div>
         </div>

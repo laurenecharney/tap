@@ -15,15 +15,11 @@ const query = `
         url
       }
       upcomingEvents
+      zoomLink
     }
   }
 }
 `;
-
-function handleClick() {
-  window.open('https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvanderbilt.zoom.us%2Fj%2F6760925998&data=02%7C01%7Csamantha.r.suazo%40mail-service-3-mx.vanderbilt.edu%7C5f756e39301e4cb0aea608d852b8c22b%7Cba5a7f39e3be4ab3b45067fa80faecad%7C0%7C0%7C637350300782443480&sdata=LaQAU3Jz8F0BOiHGS1DT2d%2FGjFWmmP4LROzVZK1NOrE%3D&reserved=0https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvanderbilt.zoom.us%2Fj%2F6760925998&data=02%7C01%7Csamantha.r.suazo%40mail-service-3-mx.vanderbilt.edu%7C5f756e39301e4cb0aea608d852b8c22b%7Cba5a7f39e3be4ab3b45067fa80faecad%7C0%7C0%7C637350300782443480&sdata=LaQAU3Jz8F0BOiHGS1DT2d%2FGjFWmmP4LROzVZK1NOrE%3D&reserved=0', '_blank');
-}
-
 
 function Home() {
   const [page, setPage] = useState(null);
@@ -47,6 +43,11 @@ function Home() {
         setPage(data.tapMainCollection.items[0]);
       });
   }, []);
+
+  function handleClick() {
+    window.open(page.zoomLink, '_blank');
+  }
+  
 
   if (!page) {
     return (
@@ -188,7 +189,7 @@ function Home() {
         <div style={{ padding: 40 }}>
           <p>.</p>
         </div>
-      </div>
+      </div> 
     </div>
   );
 }
