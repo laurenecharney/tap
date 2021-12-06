@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/laurenecharney/tap/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/laurenecharney/tap/static/js/main.1684c8d7.chunk.js",
+    "main.js.map": "/laurenecharney/tap/static/js/main.1684c8d7.chunk.js.map",
+    "runtime-main.js": "/laurenecharney/tap/static/js/runtime-main.9d95fe97.js",
+    "runtime-main.js.map": "/laurenecharney/tap/static/js/runtime-main.9d95fe97.js.map",
+    "static/css/2.e8542bea.chunk.css": "/laurenecharney/tap/static/css/2.e8542bea.chunk.css",
+    "static/js/2.e731efc9.chunk.js": "/laurenecharney/tap/static/js/2.e731efc9.chunk.js",
+    "static/js/2.e731efc9.chunk.js.map": "/laurenecharney/tap/static/js/2.e731efc9.chunk.js.map",
+    "index.html": "/laurenecharney/tap/index.html",
+    "static/css/2.e8542bea.chunk.css.map": "/laurenecharney/tap/static/css/2.e8542bea.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/laurenecharney/tap/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.e731efc9.chunk.js.LICENSE.txt": "/laurenecharney/tap/static/js/2.e731efc9.chunk.js.LICENSE.txt",
+    "static/media/Mentees.d3f793c8.jpeg": "/laurenecharney/tap/static/media/Mentees.d3f793c8.jpeg",
+    "static/media/MentorPhoto.0adc6076.jpg": "/laurenecharney/tap/static/media/MentorPhoto.0adc6076.jpg",
+    "static/media/taplogo.5d93024e.png": "/laurenecharney/tap/static/media/taplogo.5d93024e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d95fe97.js",
+    "static/css/2.e8542bea.chunk.css",
+    "static/js/2.e731efc9.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.1684c8d7.chunk.js"
+  ]
+}
