@@ -49,7 +49,7 @@ function Contact() {
         <div className="row align-items-center" style={{backgroundColor: "#519dd9", paddingTop: 40, paddingBottom: 40, height: "100%"}}>
           <div className="col-lg-5 offset-2">
             <img
-              className="img-flui rounded mb-4 mb-lg-0"
+              className="img-fluid rounded mb-4 mb-lg-0"
               src="http://placehold.it/900x400"
               alt=""
             />
