@@ -19,7 +19,25 @@ const query = `
       }
       aboutTheChurchText
       aboutTheChurchMapLink
-      
+      programDirectorName
+      programDirectorImage{
+        url
+      }
+      programDirectorEmail
+      enrichmentCoordinatorName1
+      enrichmentCoordinatorImage{
+        url
+      }
+      enrichmentCoordinator1Email
+      enrichmentCoordinatorName2
+      enrichmentCoordinator2Image{
+        url
+      }
+      enrichmentCoordinator2Email
+      zoomTeam
+      activitiesTeam
+      familyTeam
+      communicationsTeam      
     }
   }
 }
@@ -142,14 +160,14 @@ function About() {
               className="img-fluid rounded"
               width='50%'
               style={{padding: 15}}
-              src={page.aboutUsImage.url}
+              src={page.programDirectorImage.url}
               alt="TAP Logo"
             />
-            <h3 className="font-weight-bold">Caroline Riedl</h3>
+            <h3 className="font-weight-bold">{page.programDirectorName}</h3>
             <h5>
               <b>Role:</b> Program Director
               <br></br>
-              <b>Email:</b> caroline.c.riedl@vanderbilt.edu
+              <b>Email:</b> {page.programDirectorEmail}
             </h5>
           </div>
           <div className="col-lg-4" style={{ textAlign: "center" }}>
@@ -157,14 +175,14 @@ function About() {
               className="img-fluid rounded"
               width='50%'
               style={{padding: 15}}
-              src={page.aboutUsImage.url}
+              src={page.enrichmentCoordinatorImage.url}
               alt="TAP Logo"
             />
-            <h3 className="font-weight-bold">Sam Suazo</h3>
+            <h3 className="font-weight-bold">{page.enrichmentCoordinatorName1}</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator
               <br></br>
-              <b>Email:</b> samantha.r.suazo@vanderbilt.edu
+              <b>Email:</b> {page.enrichmentCoordinator1Email}
             </h5>
           </div>
           <div className="col-lg-4" style={{ textAlign: "center" }}>
@@ -172,14 +190,14 @@ function About() {
               className="img-fluid rounded"
               width='50%'
               style={{padding: 15}}
-              src={page.aboutUsImage.url}
+              src={page.enrichmentCoordinator2Image.url}
               alt="TAP Logo"
             />
-            <h3 className="font-weight-bold">Faith Kwentua</h3>
+            <h3 className="font-weight-bold">{page.enrichmentCoordinatorName2}</h3>
             <h5>
               <b>Role:</b> Enrichment Coordinator
               <br></br>
-              <b>Email:</b> faith.kwentua@vanderbilt.edu
+              <b>Email:</b> {page.enrichmentCoordinator2Email}
             </h5>
           </div>
         </div>
@@ -191,13 +209,13 @@ function About() {
               <div className="col-6" style={{ textAlign: "center" }}>
                 <h3 className="font-weight-semi-bold">Zoom Team</h3>
                 <h5>
-                  Jessica Davis, Grace Pulliam, Quinn Muscatel
+                {page.zoomTeam}
                 </h5>
               </div>
               <div className="col-6" style={{ textAlign: "center" }}>
                 <h3 className="font-weight-semi-bold">Family Team</h3>
                 <h5>
-                  Soretti Donka, Emily Redd, Elizabeth Baum
+                {page.familyTeam}
                 </h5>
               </div>
             </div>
@@ -206,13 +224,13 @@ function About() {
               <div className="col-6" style={{ textAlign: "center" }}>
                 <h3 className="font-weight-semi-bold">Activities Team</h3>
                 <h5>
-                  Matthew McKenna, Mark Wilkins, Victoria King
+                {page.activitiesTeam}
                 </h5>
               </div>
               <div className="col-6" style={{ textAlign: "center" }}>
                 <h3 className="font-weight-semi-bold">Communications Team</h3>
                 <h5>
-                  Madi Sims, Jennifer Fish
+                  {page.communicationsTeam}
                 </h5>
               </div>
             </div>

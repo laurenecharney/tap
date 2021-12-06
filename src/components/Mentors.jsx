@@ -11,6 +11,8 @@ const query = `
       }
       mentorsIntroText
       mentorsApplication
+      whatToExpect
+      whyTap
     }
   }
 }
@@ -210,8 +212,7 @@ function Mentors() {
             <div className="row">
               <h3 className="font-weight-semi-bold">What To Expect</h3>
               <p>
-                Fill out the short Google Form embedded below, and we will contact
-                you with next steps to join the program!
+                {page.whatToExpect}
               </p>
             </div>
             <div className="row">
@@ -224,8 +225,7 @@ function Mentors() {
             <div className="row">
               <h3 className="font-weight-semi-bold">Why TAP</h3>
               <p>
-                The Afterschool Program fosters mentorships that improve students'
-                academic and personal lives in the long term.
+                {page.whyTap}
               </p>
             </div>
             <div className="row">

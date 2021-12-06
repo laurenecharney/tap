@@ -7,6 +7,9 @@ const query = `
   tapMenteesPageCollection{
     items{
       menteesIntroText
+      menteesIntroImage{
+        url
+      }
       howOurMentorsCanHelpText
       howOurMentorsCanHelpImage{
         url
@@ -61,7 +64,7 @@ function Mentees() {
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
               height="300"
-              src={page.mentees}
+              src={page.menteesIntroImage.url}
               alt=""
             />
           </div>
@@ -139,8 +142,7 @@ function Mentees() {
             <div className="row">
               <h3 className="font-weight-semi-bold">Join Our Email Chain</h3>
               <p>
-                Join our email chain to stay up-to-date with all TAP programming
-                and events.
+                Reach out to Ms. Tam for more information
               </p>
             </div>
           </div>
